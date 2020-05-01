@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title%}LifeStyle{% endblock %}
+{% block style %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static "css/inicio.css"%}">
+{% endblock %}
+{% block content %}
+<div class="content-block">
+	<div>
+		<nav class="navbar bg-light">
+          <ul>
+            <a class="navicon-button toggle-menu">Menú</span></a>
+            <li>Empresa</li>
+            <li>Soporte</li>
+            <li>Configuración</li>
+            <li>Chat</li>
+            <img class="navbar-img" src="{% static "img/logo.jpg"%}">
+          </ul>
+        </nav>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col  col-md-4">
+				<div class="card">
+					<div class="card-title">
+		  				<h4>Secciones De Yoga</h4>
+		  			</div>
+		  			<img class="card-img" src="{% static "img/yoga.jpg"%}">
+				</div>
+		  	</div>
+		  	<div class="col col-md-4">
+		  		<div class="card">
+			  		<div class="card-title">
+		  				<h4>Dietas</h4>
+		  			</div>	
+		  			<img class="card-img" src="{% static "img/dieta.jpg"%}">
+		  		</div>
+		  	</div>
+		  	<div class="col col-md-4">
+		  		<div class="card">
+		  			<div class="card-title">
+	  					<h4>Secciones De Meditación</h4>
+	  				</div>
+	  				<img class="card-img" src="{% static "img/meditacion.jpg"%}">
+		  		</div>
+		  	</div>	
+		</div>	
+		<button class="btn btn-primary" id="preferidos">Archivados</button>	
+	</div>
+</div>
+
+{% endblock %}

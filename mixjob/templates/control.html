@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title%}Control{% endblock %}
+{% block style %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static "css/control.css"%}">
+{% endblock %}
+{% block content %}
+<div class="content-block">
+	<div>
+		<nav class="navbar bg-light">
+          <ul>
+            <a class="navicon-button toggle-menu">Menú</span></a>
+            <li>Empresa</li>
+            <li>Soporte</li>
+            <li>Configuración</li>
+            <li>Chat</li>
+            <img class="navbar-img" src="{% static "img/logo.jpg"%}">
+          </ul>
+        </nav>
+	</div>
+	<div class="content-body">
+		<div class="content">
+			<header>
+				<h3>Turno Del Día</h3>
+			</header>
+			<div class="content-block-card">
+				<div class="user">
+					<div class="avatar">
+						<div class="img">
+							<i class="fas fa-user"></i>
+						</div>
+						<label for="file-uploader" class="avatar-selector">
+							<i class="fa fa-camera"></i>
+						</label>
+					</div>
+					<h5>David Marabay</h5>
+					<span>Desarrollador Web</span>
+				</div>
+			</div>
+			<footer>
+				<div id="desde">
+					<span>8:00 AM - 4:00 PM</span>
+				</div>
+				<div id="hasta">
+					
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="buton">
+		<button class="btn btn-primary btn-horario">Iniciar</button>
+		<button class="btn btn-primary btn-horario">Historial</button>
+	</div>
+</div>
+
+{% endblock %}

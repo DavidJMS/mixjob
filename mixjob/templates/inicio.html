@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title%}Inicio{% endblock %}
+{% block style %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static "css/inicio.css"%}">
+{% endblock %}
+{% block content %}
+<div class="content-block">
+	<div>
+		<nav class="navbar bg-light">
+          <ul>
+            <a class="navicon-button toggle-menu">Menú</span></a>
+            <li>Empresa</li>
+            <li>Soporte</li>
+            <li>Configuración</li>
+            <li>Chat</li>
+            <img class="navbar-img" src="{% static "img/logo.jpg"%}">
+          </ul>
+        </nav>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col  col-md-4">
+				<div class="card">
+					<div class="card-title">
+		  				<h4>noticias de la empresa</h4>
+		  			</div>
+		  			<img class="card-img" src="{% static "img/news.jpg"%}">
+				</div>
+		  	</div>
+		  	<div class="col col-md-4">
+		  		<div class="card">
+			  		<div class="card-title">
+		  				<h4>importante</h4>
+		  			</div>	
+		  			<img class="card-img" src="{% static "img/important.jpg"%}">
+		  		</div>
+		  	</div>
+		  	<div class="col col-md-4">
+		  		<div class="card">
+		  			<div class="card-title">
+	  					<h4>metas</h4>
+	  				</div>
+	  				<img class="card-img" src="{% static "img/goals.jpg"%}">
+		  		</div>
+		  	</div>	
+		</div>	
+		<div class="row">
+			<div class="col col-md-4">
+				<div class="card">
+					<div class="card-title">
+		  				<h4>proximos eventos</h4>
+		  			</div>
+		  			<img class="card-img" src="{% static "img/events.jpg"%}">
+				</div>
+		  	</div>
+		  	<div class="col col-md-4">
+		  		<div class="card">
+			  		<div class="card-title">
+		  				<h4>calendario</h4>
+		  			</div>	
+		  			<img class="card-img" src="{% static "img/calendar.jpg"%}">
+		  		</div>
+		  	</div>
+		  	<div class="col col-md-4">
+		  		<div class="card">
+			  		<div class="card-title">
+		  				<h4>Tutorial</h4>
+		  			</div>	
+		  			<img class="card-img" src="{% static "img/tutorial.jpg"%}">
+		  		</div>
+		  	</div>
+		</div>	
+	</div>
+</div>
+
+{% endblock %}

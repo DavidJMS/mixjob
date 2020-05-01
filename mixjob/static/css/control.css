@@ -1,0 +1,66 @@
+.content-block{
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+	width: 100%;
+	height: 100vh;
+	background: white;
+}
+.content-body{
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	max-height: 400px;
+	max-width: 700px;
+}
+
+header{
+	text-align: center;
+}
+
+.content-block .content header,footer{
+	color: white;
+	font-weight: 300;
+	font-size: 24px;
+	padding: 1em;
+	background: #0575E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-body .avatar{
+	border: 2px solid #0575E6;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background: white;
+	margin: auto;
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-body .user{
+	padding: .5em 0;
+	text-align: center;
+}
+
+.buton{
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 0;
+    padding: 2em 5em;
+}
+
+.btn-horario{
+	text-align: center;
+	padding: .8em 1em;
+}
